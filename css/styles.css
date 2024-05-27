@@ -1,22 +1,14 @@
-
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.tituloprincipal {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
 header {
     background-color: black;
     color: white;
-    width: 100%; /* ancho de la vista*/
+    width: 100%;
 }
 
 h1 {
@@ -29,23 +21,98 @@ h1 {
     text-align: center;
     font-size: 1.5vw;
 }
-.tituloRegistro{
+
+/* Botón Iniciar Sesión */
+.btn-login {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px; /* Espacio a la derecha */
+}
+
+.btn-login:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .btn-login {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Ajustes del Navbar */
+.navbar {
+    background: linear-gradient(to right, #756f6f, #134a8e);
+    transition: 0.3s ease-out all;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Botón Iniciar Sesión */
+.btn-login {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #45a049;
+}
+
+
+/* Otros estilos */
+.tituloprincipal {
+    font-size: 30px;
     text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 .imagenChef {
     width: 70%;
     border-radius: 10px;
 }
-.imagenHome{
+
+.imagenHome {
     width: 100%;
     border-radius: 10px;
 }
 
-input[type=text], input[type=password], input[type=date], 
-input[type=url], input[type=number], input[type=mail], input[type=link], textarea {
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=url],
+input[type=number],
+input[type=mail],
+input[type=link],
+textarea {
     width: 80%;
-    padding: 12px 20px; /* visualizacion estandar */
+    padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -54,19 +121,19 @@ input[type=url], input[type=number], input[type=mail], input[type=link], textare
 }
 
 .formulario-container {
-    background-color: #e3aeae; 
+    background-color: #e3aeae;
     color: black;
-    border-radius: 10px; /* bordes redondeados */
-    padding: 20px; /* le agrego un espacio interno */
-    margin: 20px auto; /* lo centro y le pongo un margen superior e inferior */
-    width: 80%; /* ancho inicial */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* le pongo sombra */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
     .formulario-container {
-        width: 95%; /*en pantallas pequeñas le pongo mas ancho para mejor aprovechamiento del espacio */
-        padding: 15px; /* achico un poco el espacio interno */
+        width: 95%;
+        padding: 15px;
     }
 }
 
@@ -74,7 +141,7 @@ input[type=submit] {
     width: 100%;
     background-color: #4caf50;
     color: white;
-    padding: 14px 20px; 
+    padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
@@ -82,13 +149,13 @@ input[type=submit] {
 }
 
 textarea {
-    width: 80%; /* ajustado para coincidir con los inputs */
-    padding: 12px 20px; 
+    width: 80%;
+    padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    display: block; /* asegura que textarea no esté en línea */
-    margin-bottom: 8px; /* espacio debajo del textarea */
+    display: block;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -96,24 +163,21 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    height: auto; /* cambio a auto para acomodar contenido */
-    margin-top: 20px; /* espacio antes del footer */
-    
+    height: auto;
+    margin-top: 20px;
 }
-.carousel-item {
-    height: 500px; 
-    
-  }
 
-/* ajuste en pantallas pequeñas */
+.carousel-item {
+    height: 500px;
+}
+
 @media (max-width: 768px) {
     .texto-columna {
         margin-bottom: 20px;
     }
 }
-  
-  /* las imágenes del carrusel se ajustan al contenedor */
-  .carousel-item img {
+
+.carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,49 +185,62 @@ footer {
     min-width: 100%;
     width: auto;
     height: auto;
-    object-fit: cover; /* cover para q cubra el área del contenedor sin perder las proporciones */
+    object-fit: cover;
     border-radius: 10px;
 }
-  .carousel-inner img {
-    width: 100%; /* la imagen cubre el 100% del ancho del contenedor */
-    height: 500px; /* pongo altura fija para todas las imágenes */
-    object-fit: cover; /* mantengo la relación de aspecto sin recortar */
-    object-position: center; /* centro la imagen */
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
 }
 
 @media (max-width: 768px) {
     .carousel-item img {
-      height: 250px; /* ajuste para dispositivos más pequeños */
+        height: 250px;
     }
-  }
+}
 
-input[type=text], input[type=password], input[type=date], input[type=url], input[type=number], input[type=email], textarea {
-    padding: 12px; 
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=url],
+input[type=number],
+input[type=email],
+textarea {
+    padding: 12px;
 }
 
 @media (max-width: 768px) {
-    input[type=text], input[type=password], input[type=date], input[type=url], input[type=number], input[type=email], textarea {
-      padding: 8px; /* ajuste mas pequeño para pantallas pequeñas */
+    input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=url],
+    input[type=number],
+    input[type=email],
+    textarea {
+        padding: 8px;
     }
-  }
+}
 
 .row > div {
-    padding: 0 15px; 
+    padding: 0 15px;
 }
 
 body {
-    padding-top: 40px; 
+    padding-top: 40px;
     background: linear-gradient(to right, #dc9494, #5198f0);
     color: white;
 }
 
 .texto-columna {
-    background-color: rgb(76, 76, 76); 
-    color: white; 
-    border-radius: 10px; 
-    padding: 15px; 
-    margin-bottom: 20px; /* margen inferior */
+    background-color: rgb(76, 76, 76);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -171,27 +248,19 @@ body {
         margin-bottom: 20px;
     }
 }
+
 .tituloSopa {
     text-align: center;
 }
 
-.navbar {
-    background: linear-gradient(to right, #756f6f, #134a8e);
-    text-align: center;
-    transition: .3s ease-out all;
-}
-.botonReceta{
-    transition: 0.5s all cubic-bezier(0.68,-0.55,0.27, 1.55);
+.botonReceta {
+    transition: 0.5s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
     font-weight: 100;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 2px 10px #072c59;
-    transition: 0.5s all cubic-bezier();
 }
 
-.botonReceta:hover{
-transform: translateY(-5px);
+.botonReceta:hover {
+    transform: translateY(-5px);
 }
-
-
-
