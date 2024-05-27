@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.tituloprincipal {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%; /* ancho de la vista*/
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0.3%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.tituloRegistro{
+    text-align: center;
+}
+
+.imagenChef {
+    width: 70%;
+    border-radius: 10px;
+}
+.imagenHome{
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=password], input[type=date], 
+input[type=url], input[type=number], input[type=mail], input[type=link], textarea {
+    width: 80%;
+    padding: 12px 20px; /* visualizacion estandar */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-container {
+    background-color: #e3aeae; 
+    color: black;
+    border-radius: 10px; /* bordes redondeados */
+    padding: 20px; /* le agrego un espacio interno */
+    margin: 20px auto; /* lo centro y le pongo un margen superior e inferior */
+    width: 80%; /* ancho inicial */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* le pongo sombra */
+}
+
+@media (max-width: 768px) {
+    .formulario-container {
+        width: 95%; /*en pantallas pequeñas le pongo mas ancho para mejor aprovechamiento del espacio */
+        padding: 15px; /* achico un poco el espacio interno */
+    }
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px; 
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 80%; /* ajustado para coincidir con los inputs */
+    padding: 12px 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block; /* asegura que textarea no esté en línea */
+    margin-bottom: 8px; /* espacio debajo del textarea */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: auto; /* cambio a auto para acomodar contenido */
+    margin-top: 20px; /* espacio antes del footer */
+    
+}
+.carousel-item {
+    height: 500px; 
+    
+  }
+
+/* ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+    .texto-columna {
+        margin-bottom: 20px;
+    }
+}
+  
+  /* las imágenes del carrusel se ajustan al contenedor */
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* cover para q cubra el área del contenedor sin perder las proporciones */
+    border-radius: 10px;
+}
+  .carousel-inner img {
+    width: 100%; /* la imagen cubre el 100% del ancho del contenedor */
+    height: 500px; /* pongo altura fija para todas las imágenes */
+    object-fit: cover; /* mantengo la relación de aspecto sin recortar */
+    object-position: center; /* centro la imagen */
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+      height: 250px; /* ajuste para dispositivos más pequeños */
+    }
+  }
+
+input[type=text], input[type=password], input[type=date], input[type=url], input[type=number], input[type=email], textarea {
+    padding: 12px; 
+}
+
+@media (max-width: 768px) {
+    input[type=text], input[type=password], input[type=date], input[type=url], input[type=number], input[type=email], textarea {
+      padding: 8px; /* ajuste mas pequeño para pantallas pequeñas */
+    }
+  }
+
+.row > div {
+    padding: 0 15px; 
+}
+
+body {
+    padding-top: 40px; 
+    background: linear-gradient(to right, #dc9494, #5198f0);
+    color: white;
+}
+
+.texto-columna {
+    background-color: rgb(76, 76, 76); 
+    color: white; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-bottom: 20px; /* margen inferior */
+}
+
+@media (max-width: 768px) {
+    .texto-columna {
+        margin-bottom: 20px;
+    }
+}
+.tituloSopa {
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(to right, #756f6f, #134a8e);
+    text-align: center;
+    transition: .3s ease-out all;
+}
+.botonReceta{
+    transition: 0.5s all cubic-bezier(0.68,-0.55,0.27, 1.55);
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #072c59;
+    transition: 0.5s all cubic-bezier();
+}
+
+.botonReceta:hover{
+transform: translateY(-5px);
+}
+
+
+
